@@ -1,0 +1,65 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Retro+Font&display=swap');*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 16px;
+    /*font-family: Calibri, Helvetica, Arial, sans-serif;*/
+    font-family: 'Orbitron', Calibri, Helvetica, Arial, sans-serif;
+    
+}
+
+html,
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+header,
+footer {
+    /* centers header and footer content horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 2px solid white;
+    font-size: 25pt;
+}
+
+/*****************
+Grid Formatting  
+*****************/
+
+#wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 2fr 10fr 2fr;
+    grid-template-areas: "header"
+                         "game"
+                         "footer";
+    border: 4px solid gray;
+    max-width: 1200px;
+    margin: 2vh auto;
+}
+
+header{
+    grid-area: header;
+}
+
+#gameWrapper{
+    grid-area: game;
+    background-color: gray;
+
+}
+
+footer{
+    grid-area: footer;
+}
+
+#gameCanvas{
+background-color: blue;
+}
